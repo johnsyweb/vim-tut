@@ -34,19 +34,19 @@ Mappings
 
 `<Leader>tut`
 
-    Toggles betwixt source and unit test file
+Toggles betwixt source and unit test file
 
 Commands
 --------
 
 `:TUT`
 
-    Toggles betwixt source and unit test file
+Toggles betwixt source and unit test file
 
 Settings
 --------
 
-By default, unit_test filenames are deemed to begin with 't_'.
+By default, unit-test filenames are deemed to begin with 't_'.
 
 Tell toggle_unit_tests.vim your own prefix by setting the following global
 variable, perhaps in `$VIMRC`:
