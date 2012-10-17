@@ -1,9 +1,9 @@
 " Vim global plug-in for toggling between source and unit test files.
-" Last Change:	Wed  5 Aug 2009 09:36:13 EST
-" Maintainer:	Pete Johns <paj-vim@johnsy.com>
-" License:	    This file is placed in the public domain.
+" Last Change:	Thursday, 18 October 2012
+" Maintainer:	Pete Johns <http://johnsy.com/>
+" License:      Same terms as Vim itself (see |license|)
 " Notes:        This plugin assumes source and unit test files are in the same
-"               directory, as I believe this to be best practice.
+"               directory.
 
 
 if exists('g:loaded_toggle_unit_tests')
@@ -48,7 +48,7 @@ endfunction
 
 
 function! s:CurrentFileIsCppHeader()
-    return expand('%:e') == 'h' 
+    return expand('%:e') == 'h'
 endfunction
 
 
@@ -66,7 +66,7 @@ endfunction
 
 function! s:CurrentFileIsTest()
     let l:unit_test_regex = '^'.g:unit_test_prefix
-    return expand('%:t') =~ l:unit_test_regex 
+    return expand('%:t') =~ l:unit_test_regex
 endfunction
 
 
@@ -96,7 +96,7 @@ endfunction
 function! s:OpenFile(filename)
     let l:full_path = expand('%:p:h') . '/' . a:filename
     let l:already_opened_buffer = bufnr(l:full_path) != -1
-    if l:already_opened_buffer 
+    if l:already_opened_buffer
         execute 'buffer! ' . l:full_path
     else
         execute 'edit! ' . l:full_path

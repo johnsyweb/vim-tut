@@ -1,12 +1,11 @@
 *toggle_unit_tests.txt*	plug-in for toggling between source and unit test files.
-Copyright (c) 2009 Pete Johns <paj-vim@johnsy.com>
 
-For instructions on installing this file, type
-    :help add-local-help
-inside Vim.
+                                                      *toggle_unit_tests-author*
+Author: Pete Johns <http://johnsy.com/>
+License: Same terms as Vim itself (see |license|)
 
-                                                     *toggle_unit_tests-usage*
-Usage:
+                                                       *toggle_unit_tests-usage*
+USAGE
 
 Use this plug-in when you are doing Test-Driven Development [TDD] in any
 language to quickly switch between unit-test and production code. To make this
@@ -15,31 +14,37 @@ really fast bind the Toggle function to a function key in your .vimrc:
     "   [F3]    toggles between (header, ) source and test files.
     nnoremap    <F3> :<C-U>TUT<CR>
 
-This plug-in assumes source and unit test files are in the same directory, as
-I believe this to be best practice.
+This plug-in assumes source and unit test files are in the same directory.
 
-                                                  *toggle_unit_tests-mappings*
-Mappings:
+                                                    *toggle_unit_tests-mappings*
+MAPPINGS
 
-<Leader>tut   or   <Plug>ToggleUnitTestsToggle
+<Leader>tut
     Toggles betwixt source and unit test file
 
-                                                  *toggle_unit_tests-commands*
+                                                    *toggle_unit_tests-commands*
 
-Commands:
+COMMANDS
 
 :TUT
 	Toggles betwixt source and unit test file
 
-                                                  *toggle_unit_tests-settings*
-Settings:
+                                                    *toggle_unit_tests-settings*
+SETTINGS
 
-By default, unit_test filenames are deemed to begin with 't_'. 
+By default, unit_test filenames are deemed to begin with 't_'.
 
 Tell toggle_unit_tests.vim your own prefix by setting the following global
 variable, perhaps in your .vimrc:
-
+>
     let g:unit_test_prefix='test_'
+<
 
--- 
-vim:tw=78:ts=8:ft=help
+                                                       *toggle_unit_tests-about*
+ABOUT
+
+Grab the latest version, submit an improvement or report a bug on GitHub:
+
+    http://github.com/johnsyweb/vim-tut/
+
+ vim:ft=help:et:ts=2:sw=2:sts=2:norl
