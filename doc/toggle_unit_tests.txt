@@ -1,4 +1,4 @@
-*toggle_unit_tests.txt*	plug-in for toggling between source and unit test files.
+*toggle_unit_tests.txt* plug-in for toggling between source and unit test files.
 
                                                       *toggle_unit_tests-author*
 Author: Pete Johns <http://johnsy.com/>
@@ -16,18 +16,18 @@ really fast bind the Toggle function to a function key in your .vimrc:
 
 This plug-in assumes source and unit test files are in the same directory.
 
-                                                    *toggle_unit_tests-mappings*
-MAPPINGS
-
-<Leader>tut
-    Toggles betwixt source and unit test file
-
                                                     *toggle_unit_tests-commands*
 
 COMMANDS
 
 :TUT
-	Toggles betwixt source and unit test file
+    Toggles betwixt source and unit test file
+
+                                                    *toggle_unit_tests-mappings*
+MAPPINGS
+
+<Leader>tut
+    Calls :TUT
 
                                                     *toggle_unit_tests-settings*
 SETTINGS
