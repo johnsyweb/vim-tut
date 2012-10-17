@@ -29,19 +29,19 @@ and then simply copy and paste:
 Once help tags have been generated, you can view the manual with
 `:help toggle_unit_tests`.
 
-Mappings
---------
-
-`<Leader>tut`
-
-Toggles betwixt source and unit test file
-
 Commands
 --------
 
 `:TUT`
 
 Toggles betwixt source and unit test file
+
+Mappings
+--------
+
+`<Leader>tut`
+
+Calls `:TUT`.
 
 Settings
 --------
@@ -62,5 +62,4 @@ If you find this plug-in useful, please follow this repository on
 something to say, you can contact [johnsyweb](http://johnsy.com/about/) on
 [Twitter](http://twitter.com/johnsyweb/) and
 [GitHub](https://github.com/johnsyweb/).
-
 
