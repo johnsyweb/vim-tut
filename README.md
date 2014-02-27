@@ -1,5 +1,5 @@
-:TUT
-====
+TUT
+===
 
 Toggles betwixt source and unit test file
 
@@ -10,9 +10,9 @@ Use this plug-in when you are doing Test-Driven Development [TDD] in any
 language to quickly switch between unit-test and production code. To make this
 really fast, bind the TUT command to a function key in your `$VIMRC`:
 
-```
-    "   [F3]    toggles between (header, ) source and test files.
-    nnoremap    <F3> :<C-U>TUT<CR>
+```vim
+[F3]    toggles between (header, ) source and test files.
+nnoremap    <F3> :<C-U>TUT<CR>
 ```
 
 This plug-in assumes source and unit test files are in the same directory.
@@ -23,23 +23,33 @@ Installation
 I recommend installing [pathogen.vim](https://github.com/tpope/vim-pathogen),
 and then simply copy and paste:
 
-    cd ~/.vim/bundle
-    git clone git://github.com/johnsyweb/vim-tut.git
+```sh
+cd ~/.vim/bundle
+git clone git://github.com/johnsyweb/vim-tut.git
+vim -cHelptags -cq
+```
 
-Once help tags have been generated, you can view the manual with
-`:help toggle_unit_tests`.
+Once help tags have been generated, you can view the manual with:
+
+```vim
+:help toggle_unit_tests
+```
 
 Commands
 --------
 
-`:TUT`
+```vim
+:TUT
+```
 
 Toggles betwixt source and unit test file
 
 Mappings
 --------
 
-`<Leader>tut`
+```vim
+<Leader>tut
+```
 
 Calls `:TUT`.
 
@@ -51,7 +61,9 @@ By default, unit-test filenames are deemed to begin with 't_'.
 Tell toggle_unit_tests.vim your own prefix by setting the following global
 variable, perhaps in `$VIMRC`:
 
-    let g:unit_test_prefix='test_'
+```vim
+let g:unit_test_prefix='test_'
+```
 
 Thanks
 ------
